@@ -10,6 +10,11 @@
 script_directory="$( cd "$( dirname $0 )" && echo $PWD )"
 #echo "script_directory = $script_directory"
 
+# The script basename:
+script_basename="$( basename $0 )"
+#echo "script_basename = $script_basename"
+
+#-------------
 cd $script_directory
 
 /usr/bin/tar --extract --file all.tar
@@ -22,6 +27,10 @@ cp --target-directory=/etc/apache2/conf-available \
 #-------------
 sudo apache2ctl graceful
 
-rm *.conf
+mv $script_basename $script_basename-save
+
+rm -fv *.conf *.sh
+
+mv $script_basename-save $script_basename
 
 echo "Success"

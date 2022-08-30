@@ -10,6 +10,7 @@
 script_directory="$( cd "$( dirname $0 )" && echo $PWD )"
 #echo "script_directory = $script_directory"
 
+#-------------
 cd $script_directory
 
 src/upload-common.sh
