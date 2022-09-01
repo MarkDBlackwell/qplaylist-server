@@ -8,11 +8,9 @@
 
 # The path to the directory containing this script (without a trailing separator):
 script_directory="$( cd "$( dirname $0 )" && echo $PWD )"
-#echo "script_directory = $script_directory"
 
 # The script basename:
 script_basename="$( basename $0 )"
-#echo "script_basename = $script_basename"
 
 #-------------
 cd $script_directory
