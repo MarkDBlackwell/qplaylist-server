@@ -21,6 +21,6 @@ cd develop-tmp
 
 echo "When prompted, enter the password for the production server."
 
-cat ../src/session.ftp | ftp -n `cat ../var/domain-name-production`
+cat ../src/session.ftp | /usr/bin/ftp -n `cat ../var/domain-name-production`
 
 echo "Success"

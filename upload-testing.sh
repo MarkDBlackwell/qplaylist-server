@@ -21,7 +21,7 @@ cd develop-tmp
 
 echo "When prompted, enter the password for the testing server."
 
-cat ../src/session.ftp | ftp -n `cat ../var/domain-name-testing`
+cat ../src/session.ftp | /usr/bin/ftp -n `cat ../var/domain-name-testing`
 
 echo "Success"
 
