@@ -23,4 +23,4 @@ echo "When prompted, enter the password for the production server."
 
 cat ../src/session.ftp | /usr/bin/ftp -n `cat ../var/domain-name-production`
 
-echo "Success"
+echo "Did it work?"
