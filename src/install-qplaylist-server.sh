@@ -27,7 +27,9 @@ sudo apache2ctl graceful
 
 mv $script_basename $script_basename-save
 
-rm -fv *.conf *.sh
+rm -fv \
+  local-settings.conf \
+  security.conf
 
 mv $script_basename-save $script_basename
 
